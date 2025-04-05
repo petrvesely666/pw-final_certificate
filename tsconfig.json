@@ -15,7 +15,7 @@
         "allowSyntheticDefaultImports": true, // Zajišťuje kompatiblitu mezi CommonJS a ES moduly
         "skipLibCheck": true, // Přeskakuje kontrolu typů ve vnějších knihovnách (zrychluje kompilaci)
         "forceConsistentCasingInFileNames": true, // Zajišťuje, že jména souborů jsou konzistentní
-        "outDir": "dist", // Cesta, kam budou zkompilované JS soubory uloženy (pokud budete kompilovat)
+        "outDir": "dist" // Cesta, kam budou zkompilované JS soubory uloženy (pokud budete kompilovat)
     },
     "include": [
         "tests/**/*.ts",
