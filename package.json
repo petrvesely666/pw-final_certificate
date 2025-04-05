@@ -1,0 +1,15 @@
+{
+    "dependencies":{
+        "@biomejs/biome": "^1.9.4",
+        "@faker-js/faker": "^9.5.1",
+        "@playwright/test": "^1.51.0",
+        "@types/node": "^22.13.9",
+        "@types/oracledb": "^6.5.3",
+        "@types/papaparse": "^5.3.15",
+        "dotenv": "^16.4.7",
+        "oracledb": "^6.8.0",
+        "papaparse": "^5.5.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.2"
+    }
+}
