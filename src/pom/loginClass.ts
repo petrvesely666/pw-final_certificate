@@ -1,10 +1,9 @@
-import { TestType, PlaywrightTestArgs, PlaywrightTestOptions, PlaywrightWorkerArgs, PlaywrightWorkerOptions, Page } from "@playwright/test";
+import { TestType, PlaywrightTestArgs, PlaywrightTestOptions, PlaywrightWorkerArgs, PlaywrightWorkerOptions, Page, expect } from "@playwright/test";
 import { TestConfig, TestSecrets } from "../types/globalTypes";
+import { FeUtils } from "../lib/frontend";
 
 
-export class LoginPage{
-    protected _page: Page
-    protected _test: TestType<PlaywrightTestArgs & PlaywrightTestOptions, PlaywrightWorkerArgs & PlaywrightWorkerOptions>
+export class LoginPage extends FeUtils {
     protected _testConfig: TestConfig
     protected _testSecrets: TestSecrets
 
@@ -14,15 +13,15 @@ export class LoginPage{
         testConfig: TestConfig,
         testSecrets: TestSecrets
     ) {
-        this._page = page
-        this._test = test
+        super(page, test)
         this._testConfig = testConfig
         this._testSecrets = testSecrets
     }
 
     //metody
     public async openHomepage() {
-        await this._page.goto(this._testConfig.endpointUrl)
+        await this._goTo(this._testConfig.endpointUrl)
+        await expect(this._page).toHaveURL(this._testConfig.endpointUrl)
     }
 
 }

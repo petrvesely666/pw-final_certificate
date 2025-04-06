@@ -1,5 +1,5 @@
 import { test } from '@playwright/test'
-import { LoginPage } from '../src/pom/feClass'
+import { LoginPage } from '../src/pom/loginClass'
 import dotenv from 'dotenv'
 import { TestConfig, TestSecrets } from '../src/types/globalTypes'
 
