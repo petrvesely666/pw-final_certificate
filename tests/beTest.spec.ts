@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import { TestConfig, TestSecrets } from '../src/types/globalTypes'
 import { Component1Page } from '../src/som/component1Class'
 
+
 dotenv.config({ override: true })
 
 const env = process.env.ENV || 'dev'
