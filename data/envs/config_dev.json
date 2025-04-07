@@ -1,4 +1,5 @@
 {
     "endpointUrl": "https://www.demoblaze.com/",
-    "apiEndpoint":"https://fakerestapi.azurewebsites.net/index.html"
+    "apiEndpoint":"https://fakerestapi.azurewebsites.net/index.html",
+    "homeButtonSelector": "a#nava"
 }
