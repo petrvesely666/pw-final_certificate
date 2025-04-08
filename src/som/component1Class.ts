@@ -2,6 +2,8 @@ import { type TestType, type PlaywrightTestArgs, type PlaywrightTestOptions, typ
 import { TestConfig, TestSecrets } from "../types/globalTypes";
 import { BeUtils } from "../lib/backend";
 
+
+
 export class Component1Page extends BeUtils {
     protected _testConfig: TestConfig
     protected _testSecrets: TestSecrets
@@ -14,7 +16,7 @@ export class Component1Page extends BeUtils {
     ) {
         super(request, test)
         this._testConfig = testConfig
-        this._testSecrets = testSecrets
+        this._testSecrets = testSecrets       
     }
 
     // Metody

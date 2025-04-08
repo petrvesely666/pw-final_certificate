@@ -15,7 +15,7 @@ test.describe("Test Suite", () => {
         username: process.env.UNAME,
         password: process.env.PWORD        
     }
-    test("FE test s využitím POM struktury", async({ page }) => {      
+    test("@smoke @regression FE test s využitím POM struktury", async({ page }) => {      
 
         await test.step ("Otevřít stránku www.demoblaze.com", async () => {
             const loginPage = new LoginPage(page, test, testConfig, testSecrets)
